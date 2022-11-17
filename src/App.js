@@ -42,16 +42,13 @@ export default function App() {
         <div></div>
       )}
 
-      {/* This doesn't work! It gives an error here, because it doesn't identify handleSubmit. */}
       <form onSubmit={handleSubmit}>
         <input type="text" 
-        //value={this.state.zipCode}
         onChange={event => setZipCode({ zipCode: event.target.value})}
         placeholder="Zip Code" 
         required />
         <button type="submit">Find weather!</button>
       </form>
     </div>
-    //Where do we put the form? We need to include a form for entering a ZIP code, and then calling the same weather again with that value
   );
 }
